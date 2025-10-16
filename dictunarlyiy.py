@@ -7,5 +7,5 @@ item = {
     "name": "TCL 67\" 4K UHD TV"
     "price": 670.67,
     "department": "Televisions",
-    "description": "67-inch Ultra HD Smart TV with streaming apps."
+    "description": "67-inch Ultra HD Smart TV Featreing streaming apps."
 }

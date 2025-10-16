@@ -102,3 +102,19 @@ It’s like making a **numbered shopping list** automatically.
 ---
 
 ![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
+
+![Dictionary Diagram](output.png)
