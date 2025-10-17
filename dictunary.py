@@ -20,5 +20,7 @@ microcenter = [
         "specs": "Intel Core Ultra 9 285HX, RTX 5090, 18 Inch UHD+ Mini-LED display", 
     }
 ]
-
-print(microcenter[0]["name"])
+for index, item in enumerate(microcenter):
+    print(index, ":", item["name"])
+useritem = int(input("What laptop would you like? Please input a number: "))
+print (microcenter[useritem]["name"])
