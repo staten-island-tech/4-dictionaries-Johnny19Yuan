@@ -17,8 +17,8 @@ microcenter = [{
 }]
 total = 0 
 cart = []
-checkout = "N"
-while checkout == "N":
+checkout = "n"
+while checkout == "n":
     print("Microcenter Gaming laptops:")
     for index, item in enumerate(microcenter):
         print(index, ":", item["name"])
@@ -27,7 +27,7 @@ while checkout == "N":
     total += (float(microcenter[useritem]["price"]))
     print("Your cart: ") 
     print(cart)
-    checkout = input("Do you want to check out? Y To checkout,  N To contunue shopping: ")
+    checkout = input("Do you want to check out? y To checkout,  n To contunue shopping: ")
 print("checkout")
 print(f"you bought: {cart}")
 print(f"Your total is ${total}")
