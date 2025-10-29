@@ -11,7 +11,7 @@ microcenter = [{
     "price": "1999.99",
     "specs": "Intel Core Ultra 9 275HX, RTX 5070Ti, 16.2 Inch 144Hz OLED display",
 },{
-    "name": "MSI Titan 18 HX AI A2XWJG-412US",
+    "name": "MSI Titan 18 HX AI",
     "price": "4299.99",
     "specs": "Intel Core Ultra 9 285HX, RTX 5090, 18 Inch UHD+ Mini-LED display", 
 }]
@@ -25,9 +25,9 @@ while checkout == "n":
     useritem = int(input("What laptop would you like? Please input a number: "))
     cart.append(microcenter[useritem]["name"])
     total += (float(microcenter[useritem]["price"]))
-    print("Your cart: ") 
-    print(cart)
+    print(f"Your cart: {cart}") 
     checkout = input("Do you want to check out? y To checkout,  n To contunue shopping: ")
 print("checkout")
 print(f"you bought: {cart}")
-print(f"Your total is ${total}")
+rounded_number = round(total, 2)
+print(f"Your total is ${rounded_number}")
