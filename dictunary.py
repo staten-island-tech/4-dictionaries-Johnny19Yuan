@@ -26,8 +26,10 @@ while checkout == "n":
     cart.append(microcenter[useritem]["name"])
     total += (float(microcenter[useritem]["price"]))
     print(f"Your cart: {cart}") 
-    checkout = input("Do you want to check out? y To checkout,  n To contunue shopping: ")
+    checkout = input("Do you want to check out? y To checkout,  n To contunue shopping, or r to remove item: ")
+if checkout == "r":
+    remove = input(what item do you want to remove)
 print("checkout")
 print(f"you bought: {cart}")
-rounded_number = round(total, 2)
-print(f"Your total is ${rounded_number}")
+pay_me_now = round(total, 2)
+print(f"Your total is ${pay_me_now}")
