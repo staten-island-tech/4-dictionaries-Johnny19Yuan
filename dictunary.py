@@ -27,13 +27,15 @@ while checkout == "n":
     total += (float(microcenter[useritem]["price"]))
     print(f"Your cart: {cart}") 
     checkout = input("Do you want to check out? y To checkout,  n To contunue shopping, or r to remove item: ")
-if checkout == "r":
-    def rem (x,y):
-        for index, in (cart):
-        print(f"{x} {cart[y]}")
-    remove = input("what item do you want to remove: ")
-    total = -(microcenter[remove]["price"])
-    checkout = "n"
+    if checkout == "r":
+        x = -1
+        for index in range(len(cart)):
+            x = x+1
+            print(f"{x} : {cart[x]}")
+        remove = int(input("what item do you want to remove: "))
+        total = total - float(microcenter[]["price"])
+        cart.pop(remove)
+        checkout = "n"
 print("checkout")
 print(f"you bought: {cart}")
 pay_me_now = round(total, 2)
