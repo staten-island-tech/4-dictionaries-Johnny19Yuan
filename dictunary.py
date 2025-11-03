@@ -14,15 +14,27 @@ microcenter = [{
     "name": "MSI Titan 18 HX AI",
     "price": "4299.99",
     "specs": "Intel Core Ultra 9 285HX, RTX 5090, 18 Inch UHD+ Mini-LED display", 
+},{
+    "name": "RTX 5060",
+    "price": "349.99",
+    "specs": "Nvidia RTX 5060 with raytracing and DLSS upscaling",
+},{
+    "name": "RTX 5050",
+    "price": "299.99",
+    "specs": "Nvidia RTX 5050 with raytracing and DLSS upscaling",
+},{
+    "name": "",
+    "price": "349.99",
+    "specs": "Nvidia RTX 5060 with raytracing and DLSS upscaling",
 }]
 total = 0 
 cart = []
 checkout = "n"
 while checkout == "n":
-    print("Microcenter Gaming laptops:")
+    print("Welcome to Microcenter!")
     for index, item in enumerate(microcenter):
         print(index, ":", item["name"])
-    useritem = int(input("What laptop would you like? Please input a number: "))
+    useritem = int(input("What would you like? Please input a number: "))
     cart.append(microcenter[useritem]["name"])
     total += (float(microcenter[useritem]["price"]))
     print(f"Your cart: {cart}") 
@@ -33,7 +45,7 @@ while checkout == "n":
             x = x+1
             print(f"{x} : {cart[x]}")
         remove = int(input("what item do you want to remove: "))
-        total = total - float(microcenter[]["price"])
+        total = total - float(microcenter[remove]["price"])
         cart.pop(remove)
         checkout = "n"
 print("checkout")
