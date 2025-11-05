@@ -16,16 +16,24 @@ microcenter = [{
     "specs": "Intel Core Ultra 9 285HX, RTX 5090, 18 Inch UHD+ Mini-LED display", 
 },{
     "name": "RTX 5060",
-    "price": "349.99",
+    "price": "299.99",
     "specs": "Nvidia RTX 5060 with raytracing and DLSS upscaling",
 },{
     "name": "RTX 5050",
-    "price": "299.99",
+    "price": "249.99",
     "specs": "Nvidia RTX 5050 with raytracing and DLSS upscaling",
 },{
-    "name": "",
-    "price": "349.99",
-    "specs": "Nvidia RTX 5060 with raytracing and DLSS upscaling",
+    "name": "ASUS 60hz 24-inch LCD Monitor",
+    "price": "99.99",
+    "specs": "24-inch LCD monitor with 60hz refresh rate",
+},{
+    "name": "Arctic MX-6 4grams",
+    "price": "11.99",
+    "specs": "4 gram tube of MX-6 Thermal paste. With new Anti-drying and Higher thermal conductivity compared to MX-4",
+},{
+    "name": "Arctic MX-4 4grams",
+    "price": "8.99",
+    "specs": "4 gram tube of MX-4 Thermal paste",
 }]
 total = 0 
 cart = []
@@ -45,10 +53,11 @@ while checkout == "n":
             x = x+1
             print(f"{x} : {cart[x]}")
         remove = int(input("what item do you want to remove: "))
+        #FIX AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA find the price and subtract from total
         total = total - float(microcenter[remove]["price"])
         cart.pop(remove)
         checkout = "n"
-print("checkout")
-print(f"you bought: {cart}")
+print("Checkout:")
+print(f"You bought: {cart}")
 pay_me_now = round(total, 2)
 print(f"Your total is ${pay_me_now}")
