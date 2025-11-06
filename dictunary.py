@@ -35,7 +35,7 @@ microcenter = [{
     "price": "8.99",
     "specs": "4 gram tube of MX-4 Thermal paste",
 }]
-total = 0 
+total = []
 cart = []
 checkout = "n"
 while checkout == "n":
@@ -44,7 +44,7 @@ while checkout == "n":
         print(index, ":", item["name"])
     useritem = int(input("What would you like? Please input a number: "))
     cart.append(microcenter[useritem]["name"])
-    total += (float(microcenter[useritem]["price"]))
+    total.append(float(microcenter[useritem]["price"]))
     print(f"Your cart: {cart}") 
     checkout = input("Do you want to check out? y To checkout,  n To contunue shopping, or r to remove item: ")
     if checkout == "r":
@@ -53,11 +53,14 @@ while checkout == "n":
             x = x+1
             print(f"{x} : {cart[x]}")
         remove = int(input("what item do you want to remove: "))
-        #FIX AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA find the price and subtract from total
-        total = total - float(microcenter[remove]["price"])
         cart.pop(remove)
+        total.pop(remove)
         checkout = "n"
 print("Checkout:")
 print(f"You bought: {cart}")
-pay_me_now = round(total, 2)
-print(f"Your total is ${pay_me_now}")
+y = 0
+z = 0
+for index in range(len(total)):
+            y = x+1
+            z = z +(total[x])
+print(f"Your total is ${z}")
